@@ -1,21 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package bo.com.syscode.domain;
+package bo.com.syscode.dao.bean;
 
 import java.util.Calendar;
 
 /**
- * DiscountCategory
+ * DiscountProduct
  *
  * @author gnujavasergio
  */
-public class DiscountCategory {
+public class DiscountProduct {
 
     private int id;
-    private Category category;
+    private Product product;
     private int value;
     private int unit;
     private Calendar validFrom;
@@ -24,10 +19,10 @@ public class DiscountCategory {
     private int minimumOrderValue;
     private int maximumDiscountAmount;
     private boolean allowRedeem;
-    private Calendar createdAt;    
+    private Calendar createdAt;
     private Calendar modifedAt;
 
-    public DiscountCategory() {
+    public DiscountProduct() {
     }
 
     public int getId() {
@@ -38,12 +33,12 @@ public class DiscountCategory {
         this.id = id;
     }
 
-    public Category getCategory() {
-        return category;
+    public Product getProduct() {
+        return product;
     }
 
-    public void setCategory(Category category) {
-        this.category = category;
+    public void setProduct(Product product) {
+        this.product = product;
     }
 
     public int getValue() {
@@ -125,6 +120,8 @@ public class DiscountCategory {
     public void setModifedAt(Calendar modifedAt) {
         this.modifedAt = modifedAt;
     }
+    
+    
     
     
     

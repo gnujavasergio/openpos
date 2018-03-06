@@ -1,4 +1,4 @@
-package bo.com.syscode.domain;
+package bo.com.syscode.dao.bean;
 
 /**
  * Product
